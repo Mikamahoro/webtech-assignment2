@@ -1,111 +1,40 @@
 # webtech-assignment2
 --------------------
-Pages and Components
---------------------
-1. Login Page
-Description: The login page allows users to authenticate themselves using their credentials. It ensures that only authorized users can access the system.
+LOGIN AND SIGN UP PAGES
+-----------------------
 
-Key Features:
 
-User Input Fields: Fields for entering the username and password.
+1. Sign-Up (Registration) Process
+   -----------------------------
+   
+Description: The sign-up process allows new users to create an account by providing their details. This process involves collecting user information, validating the input, and storing the user data in the database.
 
-Submit Button: Button to submit the login form and authenticate the user.
+Steps:
 
-Error Handling: Displays error messages for invalid credentials or missing fields.
+User Input: The user fills out a registration form with their details, such as username, password, first name, last name, email, and phone number.
 
-2. Home Page
-Description: The home page serves as the landing page after a successful login, providing an overview of the user's financial status and quick links to other sections of the application.
+Validation: The system validates the input to ensure all required fields are filled out correctly and the input meets any specified criteria (e.g., password strength, unique username).
 
-Key Features:
+Data Storage: Once validated, the user data is stored in the database, and the user account is created.
 
-Dashboard Overview: Displays a summary of the user's expenses, budgets, and notifications.
+Confirmation
 
-Quick Links: Provides easy navigation to other pages such as expense tracking, reports, and settings.
 
-3. Register Page
-Description: The register page allows new users to create an account by providing their details. This ensures that all users are registered and can be tracked within the system.
+2.Sign-In (Login) Process
+-------------------------
+Description: The sign-in process allows existing users to access the system by authenticating themselves with their credentials.
 
-Key Features:
+Steps:
 
-User Input Fields: Fields for entering username, password, first name, last name, email, and phone number.
+User Input: The user fills out a login form with their username and password.
 
-Submit Button: Button to submit the registration form and create a new user account.
+Validation: The system validates the input to ensure the fields are not empty.
 
-Error Handling: Displays error messages for missing fields or invalid input.
+Authentication: The system checks the credentials against the stored user data in the database.
 
-4. Admin Dashboard
-Description: The admin dashboard is the central hub for managing users, tracking expenses, and overseeing system operations. It provides a comprehensive view and control over all aspects of the expense tracker.
+Access Granted: If the credentials are correct, the user is granted access and redirected to the home page. If the credentials are incorrect, an error message is displayed.
 
-Key Features:
 
-User Management: Create, edit, and delete user accounts.
 
-Expense Monitoring: View and approve expenses submitted by users.
+These explanations and sample code snippets outline the essential steps and logic for the sign-up and sign-in processes in your Expense Tracker Management System. You can expand upon these basic implementations to include additional features such as password encryption, email verification, and more comprehensive error handling.
 
-Budget Management: Define and manage budgets for different categories.
-
-Notifications: View notifications and alerts about important system events.
-
-5. Manager Page
-Description: The manager page allows managers to oversee the expenses and performance of their team. It provides tools for budget management and expense approval.
-
-Key Features:
-
-Expense Approval: Review and approve expenses submitted by team members.
-
-Performance Monitoring: Track team performance and adherence to budgets.
-
-Notifications: Receive alerts about important events and updates.
-
-6. Customer Page
-Description: The customer page is designed for individual users to manage their expenses and view their financial status.
-
-Key Features:
-
-Expense Tracking: Add, edit, and delete expenses.
-
-Budget Management: Set up and manage budgets.
-
-Reports: Generate and view reports on expenses and budgets.
-
-7. Edit Page
-Description: The edit page allows users to update their personal information and manage their account settings.
-
-Key Features:
-
-Form Fields: Update username, password, first name, last name, email, and phone number.
-
-Submit Button: Save changes to the user account.
-
-Error Handling: Displays error messages for invalid input.
-
-8. Upload Page
-Description: The upload page enables users to upload receipts and documents related to their expenses.
-
-Key Features:
-
-File Upload: Upload files related to expenses.
-
-File Management: View and manage uploaded files.
-
-9. Forgot Password Page
-Description: The forgot password page allows users to reset their password by entering their email address.
-
-Key Features:
-
-Email Input Field: Enter the email address associated with the account.
-
-Submit Button: Send a password reset link to the email address.
-
-Error Handling: Displays error messages for invalid email addresses.
-
-10. Reset Password Page
-Description: The reset password page allows users to set a new password after receiving a password reset link.
-
-Key Features:
-
-Password Input Fields: Enter and confirm the new password.
-
-Submit Button: Save the new password.
-
-Error Handling: Displays error messages for invalid input or mismatched passwords
